@@ -1,28 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
-import HomePage from "./HomePage";
-import Banner from "./Banner";
-import Row from "./Row";
-import requests from "./Request";
+import HomePage from "./Pages/HomePage";
+import ProfilePage from "./Pages/ProfilePage";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import LoginPage from "./Pages/LoginPage";
+import { auth } from "./firebase";
+import { useDispatch, useSelector } from "react-redux";
+import { login, logout, selectUser } from "./features/userSlice";
+import ProtectedRoute from "./Pages/ProtectedRoute";
 
 function App() {
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const unSubscriber = auth.onAuthStateChanged((userAuth) => {
+      if (userAuth) {
+        dispatch(
+          login({
+            uid: userAuth.uid,
+            email: userAuth.email
+          })
+        );
+      } else {
+        console.log("logout on app");
+        dispatch(logout());
+      }
+    });
+
+    return unSubscriber;
+  }, []);
+
   return (
     <div className="app">
-      <HomePage />
-      <Banner />
-
-      <Row
-        title="XFlix Originals"
-        fetchUrl={requests.fetchXFlixOriginals}
-        isLargeRow={true}
-      />
-      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
-      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
-      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
-      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
-      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
-      <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+      <Router>
+        {!user ? (
+          <LoginPage />
+        ) : (
+          <Switch>
+            <Route path="/profile">
+              <ProfilePage />
+            </Route>
+            <ProtectedRoute exact path="/" component={HomePage} />
+          </Switch>
+        )}
+      </Router>
     </div>
   );
 }
