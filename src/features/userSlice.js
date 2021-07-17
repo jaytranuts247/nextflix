@@ -12,6 +12,7 @@ export const userSlice = createSlice({
     },
     logout: (state) => {
       state.user = null;
+      state.subscription = null;
     },
     addSubcription: (state, action) => {
       state.subscription = action.payload;
