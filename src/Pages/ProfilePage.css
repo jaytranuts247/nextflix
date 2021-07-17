@@ -88,3 +88,14 @@
 .profilePage__icon > img {
   height: 100px;
 }
+
+.profilePage__account {
+  font-size: 5rem;
+  color: #e50914;
+  /* background-color: #ddd; */
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

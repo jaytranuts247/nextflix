@@ -26,10 +26,13 @@ const ProfilePage = () => {
           <div className="profilePage__info">
             <div className="profilePage__icon">
               <h1>Your Profile</h1>
-              <img
+              {/* <img
                 src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"
                 alt=""
-              />
+              /> */}
+              <div className="profilePage__account">
+                <i class="fas fa-user-circle"></i>
+              </div>
             </div>
             <div className="profilePage__details">
               <h2>{user.email}</h2>

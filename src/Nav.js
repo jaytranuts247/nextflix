@@ -28,12 +28,15 @@ const Nav = () => {
           alt="logo"
           onClick={() => history.push("/")}
         />
-        <img
+        {/* <img
           className="nav__avatar"
           onClick={() => history.push("/profile")}
           src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
           alt="avatar"
-        />
+        /> */}
+        <div className="nav__account" onClick={() => history.push("/profile")}>
+          <i class="fas fa-user-circle"></i>
+        </div>
       </div>
     </div>
   );
