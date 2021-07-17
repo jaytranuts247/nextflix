@@ -24,7 +24,7 @@ const Nav = () => {
       <div className="nav__contents">
         <img
           className="nav__logo"
-          src="https://logos-world.net/wp-content/uploads/2020/04/Netflix-Logo-2014-present.jpg"
+          src="../images/xflix_2.svg"
           alt="logo"
           onClick={() => history.push("/")}
         />

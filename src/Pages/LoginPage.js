@@ -10,7 +10,7 @@ const LoginPage = () => {
       <div className="loginPage__background">
         <img
           className="loginPage__logo"
-          src="https://logos-world.net/wp-content/uploads/2020/04/Netflix-Logo-2014-present.jpg"
+          src="../../images/xflix_2.svg"
           alt=""
         />
         <button className="loginPage__button" onClick={() => setSignIn(true)}>

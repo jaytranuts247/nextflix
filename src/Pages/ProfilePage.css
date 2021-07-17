@@ -1,6 +1,7 @@
 .profilePage {
   height: 100vh;
   color: #fff;
+  background: #000;
 }
 
 .profilePage__body {
