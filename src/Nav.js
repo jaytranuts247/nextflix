@@ -22,12 +22,13 @@ const Nav = () => {
   return (
     <div className={`nav ${show ? "nav__black" : ""}`}>
       <div className="nav__contents">
-        <img
-          className="nav__logo"
-          src="../images/xflix_2.svg"
-          alt="logo"
-          onClick={() => history.push("/")}
-        />
+        <div className="nav__logo">
+          <img
+            src="../images/xflix_2.svg"
+            alt="logo"
+            onClick={() => history.push("/")}
+          />
+        </div>
         {/* <img
           className="nav__avatar"
           onClick={() => history.push("/profile")}
