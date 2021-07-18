@@ -234,3 +234,81 @@ div.jumbotron:nth-child(3) > .jumbotron-container > .jumbotron__media {
 div.jumbotron:nth-child(4) > .jumbotron-container > .jumbotron__media {
   margin: -5% 0% -5% 0;
 }
+
+/* section fqa-section */
+
+section.fqa-section {
+  border-top: 8px solid #222;
+  color: #fff;
+  text-align: center;
+}
+
+section.fqa-section > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 3rem 0;
+}
+section.fqa-section > button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  background: #e50914;
+  border-radius: 5px;
+  margin: 3rem 0 5rem;
+}
+
+.qna {
+  width: 100%;
+}
+
+.qna-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 900px;
+  position: relative;
+}
+
+.qna-container * {
+  box-sizing: border-box;
+}
+
+/* footer */
+
+footer {
+  border-top: 8px solid #222;
+  color: #757575;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer {
+  padding: 4rem 0;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 92%;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer__title {
+  font-size: 1.2rem;
+}
+
+.footer__body {
+  margin: 1.6rem 0;
+}
+
+.footer__body > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer__body > ul > li {
+  flex: 0 0 25%;
+  /* font-size: 1rem; */
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+}

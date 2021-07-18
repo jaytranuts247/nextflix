@@ -1,0 +1,48 @@
+.qna-item {
+  width: 100%;
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.qna-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.qna__question {
+  position: relative;
+  width: 100%;
+  background: #303030;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.qna__question > span:nth-child(2) {
+  cursor: pointer;
+}
+
+.qna__answer {
+  width: 100%;
+  background: #303030;
+  /* padding: 30px 20px; */
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: left !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.answer-contents {
+  padding: 30px 20px;
+  text-align: left !important;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.answer-contents > p:not(:last-child) {
+  margin-bottom: 15px;
+}

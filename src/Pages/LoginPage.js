@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import SignIn from "./SignIn";
 
+import { questionsAndAnswer } from "../utils";
+import QnaItem from "./QnaItem";
+
 import "./LoginPage.css";
 
 const LoginPage = () => {
@@ -144,11 +147,90 @@ const LoginPage = () => {
             </div>
           </div>
         </section>
-        <section className="fqa-section"></section>
+        <section className="fqa-section">
+          <h1>Frequently Asked Questions</h1>
+          <div className="qna">
+            <div className="qna-container">
+              {questionsAndAnswer.map((item, idx) => (
+                <QnaItem key={idx} item={item}></QnaItem>
+              ))}
+            </div>
+          </div>
+          <button className="" onClick={() => setSignIn(true)}>
+            Finish Sign Up
+          </button>
+        </section>
       </main>
-      <footer></footer>
+      <footer>
+        <div className="footer">
+          <div className="footer__title">Questions? Contact us.</div>
+          <div className="footer__body">
+            <ul>
+              <li>
+                <span>FQA</span>{" "}
+              </li>
+              <li>
+                <span>Investor Relations</span>{" "}
+              </li>
+              <li>
+                <span>Ways to Watch</span>{" "}
+              </li>
+              <li>
+                <span>Corporate Information</span>{" "}
+              </li>
+              <li>
+                <span>XFlix Originals</span>{" "}
+              </li>
+              <li>
+                <span>Help Centre</span>{" "}
+              </li>
+              <li>
+                <span>Jobs</span>{" "}
+              </li>
+              <li>
+                <span>Terms of Use</span>{" "}
+              </li>
+              <li>
+                <span>Contact Us</span>{" "}
+              </li>
+              <li>
+                <span>Account</span>{" "}
+              </li>
+              <li>
+                <span>Redeem gift cards</span>{" "}
+              </li>
+              <li>
+                <span>Privacy</span>{" "}
+              </li>
+              <li>
+                <span>Speed Test</span>{" "}
+              </li>
+              <li>
+                <span>Media Centre</span>{" "}
+              </li>
+              <li>
+                <span>Buy gift cards</span>{" "}
+              </li>
+              <li>
+                <span>Cookie Preferences</span>{" "}
+              </li>
+              <li>
+                <span>Legal Notices</span>{" "}
+              </li>
+            </ul>
+          </div>
+          <p>XFlix United State</p>
+        </div>
+      </footer>
     </>
   );
 };
 
 export default LoginPage;
+
+/**
+ * edit font
+ * scroll to top for "finish sign up"
+ * add video animation
+ * refactor using variable for color
+ */
