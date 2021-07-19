@@ -10,7 +10,7 @@ const QnaItem = ({ item }) => {
       <div className="qna__question">
         <span>{item.question}</span>
         <span onClick={() => setIsExpand((prev) => !prev)}>
-          <i class="fas fa-plus"></i>
+          <i className="fas fa-plus"></i>
         </span>
       </div>
       <AnimatePresence initial={false}>

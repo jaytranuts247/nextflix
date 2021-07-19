@@ -33,9 +33,9 @@ const LoginPage = () => {
           <div className="loginPage__body">
             <div className="loginPage__background">
               <img
-                class="concord-img vlv-creative"
+                className="concord-img vlv-creative"
                 src="https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/4b723240-7bae-4ffe-96d0-91fba08c69ee/US-en-20210607-popsignuptwoweeks-perspective_alpha_website_small.jpg"
-                srcset="https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/4b723240-7bae-4ffe-96d0-91fba08c69ee/US-en-20210607-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/4b723240-7bae-4ffe-96d0-91fba08c69ee/US-en-20210607-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/4b723240-7bae-4ffe-96d0-91fba08c69ee/US-en-20210607-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w"
+                srcSet="https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/4b723240-7bae-4ffe-96d0-91fba08c69ee/US-en-20210607-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/4b723240-7bae-4ffe-96d0-91fba08c69ee/US-en-20210607-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/4b723240-7bae-4ffe-96d0-91fba08c69ee/US-en-20210607-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w"
                 alt=""
               />
               <div className="loginPage__background--overlay"></div>
@@ -83,7 +83,7 @@ const LoginPage = () => {
               <div className="jumbotron__media col">
                 <img
                   alt=""
-                  class="our-story-card-img"
+                  className="our-story-card-img"
                   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
                   data-uia="our-story-card-img"
                 />
@@ -111,7 +111,7 @@ const LoginPage = () => {
               <div className="jumbotron__media col">
                 <img
                   alt=""
-                  class="our-story-card-img"
+                  className="our-story-card-img"
                   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
                   data-uia="our-story-card-img"
                 />
@@ -131,7 +131,7 @@ const LoginPage = () => {
               <div className="jumbotron__media col">
                 <img
                   alt=""
-                  class="our-story-card-img"
+                  className="our-story-card-img"
                   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
                   data-uia="our-story-card-img"
                 />
@@ -160,7 +160,7 @@ const LoginPage = () => {
               <div className="jumbotron__media col">
                 <img
                   alt=""
-                  class="our-story-card-img"
+                  className="our-story-card-img"
                   src="https://occ-0-2430-2433.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABdFTpLmANuJpYneLq8L5m7CunMCi8e8Nl4y7xaPVWzG3IeoDoq17egTQAthApKg_4sdRWdwuR8KadWu1frjL3JQImpwq.png?r=fcd"
                   data-uia="our-story-card-img"
                 />

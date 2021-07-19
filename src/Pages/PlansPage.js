@@ -90,9 +90,7 @@ const PlansPage = () => {
       if (sessionId) {
         // if have a session, redirect to checkout
         // init Stripe
-        const stripe = await loadStripe(
-          "pk_test_51HWpYQH2fzynofDriYjIsFrL0daSIqb7R58bzaTS6coT440DjAhIGOw5x5T5GjiDa3fnVkt8mhW3OsOFCnZOyzMA00FUkYdvfw"
-        );
+        const stripe = await loadStripe(process.env.REACT_APP_SECRET_ID);
 
         stripe.redirectToCheckout({ sessionId });
       }
