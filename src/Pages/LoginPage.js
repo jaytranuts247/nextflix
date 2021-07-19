@@ -25,10 +25,7 @@ const LoginPage = () => {
               src="../../images/xflix_2.svg"
               alt=""
             />
-            <button
-              className="loginPage__button"
-              onClick={() => setSignIn(true)}
-            >
+            <button className="loginPage__button" onClick={handleScroll}>
               Sign In
             </button>
             <div className="loginPage__gradient"></div>
@@ -251,10 +248,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-
-/**
- * edit font
- * scroll to top for "finish sign up"
- * TODO add video animation
- * TODO refactor using variable for color
- */
