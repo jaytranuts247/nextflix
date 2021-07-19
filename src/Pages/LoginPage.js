@@ -11,7 +11,7 @@ const LoginPage = () => {
   const ref = useRef();
 
   const handleScroll = () => {
-    setSignIn(true);
+    setSignIn((prev) => !prev);
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 

@@ -1,44 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# XFlIX
+Created by [Jay Tran](https://jaytranuts.herokuapp.com/) - [Live  Site](https://xflix-69c66.web.app)
 
-## Available Scripts
+![](https://xfix.s3.us-east-2.amazonaws.com/XFlix_demo.gif)
 
-In the project directory, you can run:
+#### Table of Contents - [XFLIX](#XFLIX)
+  - [Table of Contents](#table-of-contents)
+  - [Non-Technical Overview](#non-technical-overview)
+  - [Core Features:](#core-features)
+  - [Technical Overview](#technical-overview)
 
-### `yarn start`
+## Non-Technical Overview
+XFlix is simplified version of NetFlix. It was created using React, and Firebase (hosting, authentication). XFlix also integrated with payment system with Firebase Stripe extension, which enable users to make payment via Stripe. The movies list was sourced from The MovieDB APIs fro frontend display and details.
+#### Core Features
+* Login, logout and create a new account. 
+* Access to the list of movies.
+* Controlled access to paid contents.
+* Search, add, remove movie from the wished list.
+*  Make a payment with Stripe.
+## Technical Overview
+XFlix is focused for following considerations:
+1. Design elegant UX without having a designer by leveraging open source UI libraries
+2. Adhered to React and ES6 best practices to generate a true single page reactive web app experience.
+3. Controlled access to paid content by syncing subscriptions with Firebase Authentication.
+4. APIs from TMDB provided movies list from various categories depends upon different queries
+### Stripe test number account:
+<img src="https://res.cloudinary.com/dqcwg27r8/image/upload/v1626712000/stripe_payment_zgsrnj.png" alt="stripe payment">
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Card number: 4242 4242 4242 4242
+* MM/YY: 04 / 24
+* CVC: 242
+* ZIP: 42424

@@ -29,6 +29,42 @@
     rgba(0, 0, 0, 0) 60%,
     rgba(0, 0, 0, 0.8) 100%
   );
+  /* background-image: radial-gradient(
+      circle at 99% 33%,
+      rgba(25, 24, 24, 0.09) 0,
+      rgba(25, 24, 24, 0.09) 37%,
+      transparent 0,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 46% 16%,
+      rgba(25, 24, 24, 0.09) 0,
+      rgba(25, 24, 24, 0.09) 43%,
+      transparent 0,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 99% 25%,
+      rgba(25, 24, 24, 0.09) 0,
+      rgba(25, 24, 24, 0.09) 22%,
+      transparent 0,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 57% 88%,
+      rgba(25, 24, 24, 0.09) 0,
+      rgba(25, 24, 24, 0.09) 86%,
+      transparent 0,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 82% 78%,
+      rgba(25, 24, 24, 0.09) 0,
+      rgba(25, 24, 24, 0.09) 22%,
+      transparent 0,
+      transparent 100%
+    ),
+    linear-gradient(90deg, #000, #000) !important; */
   position: absolute;
   top: 0;
   left: 0;
