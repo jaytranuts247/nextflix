@@ -62,7 +62,7 @@
   margin-top: 5%;
   width: 100%;
   color: #fff;
-  background-color: #e50914;
+  background-color: var(--primary-color);
   outline-width: 0;
   border: none;
   cursor: pointer;
@@ -91,7 +91,7 @@
 
 .profilePage__account {
   font-size: 5rem;
-  color: #e50914;
+  color: var(--primary-color);
   /* background-color: #ddd; */
   border: none;
   outline: none;

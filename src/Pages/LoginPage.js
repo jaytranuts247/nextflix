@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import SignIn from "./SignIn";
 
 import { questionsAndAnswer } from "../utils";
@@ -8,10 +8,16 @@ import "./LoginPage.css";
 
 const LoginPage = () => {
   const [signIn, setSignIn] = useState(false);
+  const ref = useRef();
+
+  const handleScroll = () => {
+    setSignIn(true);
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
-      <header>
+      <header ref={ref}>
         <div className="loginPage">
           <div className="loginPage__header">
             <img
@@ -39,7 +45,7 @@ const LoginPage = () => {
             </div>
             <div className="loginPage__body-container">
               {signIn ? (
-                <SignIn />
+                <SignIn setSignIn={setSignIn} />
               ) : (
                 <>
                   <h1>Unlimited movies, TV shows and more.</h1>
@@ -84,6 +90,15 @@ const LoginPage = () => {
                   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
                   data-uia="our-story-card-img"
                 />
+                <div className="jumbotron__media--video">
+                  <video
+                    muted
+                    autoPlay
+                    playsInline
+                    loop
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                  ></video>
+                </div>
               </div>
             </div>
           </div>
@@ -123,6 +138,15 @@ const LoginPage = () => {
                   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
                   data-uia="our-story-card-img"
                 />
+                <div className="jumbotron__media--video">
+                  <video
+                    muted
+                    autoPlay
+                    playsInline
+                    loop
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                  ></video>
+                </div>
               </div>
             </div>
           </div>
@@ -156,7 +180,7 @@ const LoginPage = () => {
               ))}
             </div>
           </div>
-          <button className="" onClick={() => setSignIn(true)}>
+          <button className="" onClick={handleScroll}>
             Finish Sign Up
           </button>
         </section>
@@ -231,6 +255,6 @@ export default LoginPage;
 /**
  * edit font
  * scroll to top for "finish sign up"
- * add video animation
- * refactor using variable for color
+ * TODO add video animation
+ * TODO refactor using variable for color
  */

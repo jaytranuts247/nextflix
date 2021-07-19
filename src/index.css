@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #e50914;
+}
+
 * {
   vertical-align: baseline;
   font-weight: inherit;

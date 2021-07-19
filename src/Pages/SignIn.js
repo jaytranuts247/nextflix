@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { auth } from "../firebase";
 import "./SignIn.css";
+import useOnClickOutside from "../hooks/useOnClickOutside";
 
-const SignIn = () => {
+const SignIn = ({ setSignIn }) => {
   const [user, setUser] = useState({
     email: "",
     password: ""
   });
+  const signInRef = useRef();
+
+  useOnClickOutside(signInRef, () => setSignIn(false));
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -49,7 +53,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="signin">
+    <div className="signin" ref={signInRef}>
       <form>
         <h1>Sign In</h1>
         <input
