@@ -1,7 +1,7 @@
 # XFLIX
 Created by [Jay Tran](https://jaytranuts.herokuapp.com/) - [Live  Site](https://xflix-69c66.web.app)
 
-![](https://xfix.s3.us-east-2.amazonaws.com/XFlix_demo.gif)
+![](images/XFlix_demo.gif)
 
 #### Table of Contents - [XFLIX](#XFLIX)
   - [Table of Contents](#table-of-contents)
