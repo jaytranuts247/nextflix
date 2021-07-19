@@ -1,5 +1,5 @@
 # XFLIX
-Created by [Jay Tran](https://jaytranuts.herokuapp.com/) - [Live  Site](https://xflix-69c66.web.app)
+_Created by_ [Jay Tran](https://jaytranuts.herokuapp.com/) - [Live  Site](https://xflix-69c66.web.app)
 
 ![](public/images/XFlix_demo.gif)
 
