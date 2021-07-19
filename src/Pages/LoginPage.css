@@ -107,20 +107,20 @@
 }
 
 .loginPage__body-container > h1 {
-  font-size: 3.125rem;
+  font-size: clamp(50px, 5vw, 3.2rem);
   font-weight: 600;
   max-width: 600px;
   margin: 0 auto 20px;
 }
 
 .loginPage__body-container > h2 {
-  font-size: 2rem;
+  font-size: clamp(30px, 4vw, 2rem);
   font-weight: 400;
   margin-bottom: 30px;
 }
 
 .loginPage__body-container > h3 {
-  font-size: 1.3em;
+  font-size: clamp(18px, 3vw, 1.3rem);
   font-weight: 400;
 }
 
@@ -207,6 +207,7 @@ div.jumbotron:nth-of-type(2n + 1)
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
 .jumbotron__contents > h2 {
   font-size: 1.8rem;
   font-weight: 400;
